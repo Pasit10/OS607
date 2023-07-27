@@ -1,0 +1,3 @@
+total 0
+-rw-r--r--  1 pasitmalarat  staff  0 Jul 27 16:58 edit1.txt
+-rw-r--r--  1 pasitmalarat  staff  0 Jul 27 16:58 edit2.txt
