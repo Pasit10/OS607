@@ -13,28 +13,28 @@ int main(){
         if(pid == 0){
             if((i % 2) == 0){
                 printf("I am the child no %d\n",i);
-                int num_gc = 3; //
+                int num_gc = 3; //7.1
                 for(j = 0;j < num_gc;j++){
-                    pidsub = fork(); //
+                    pidsub = fork(); //7.2
                     if(pidsub == 0){
                         printf("I am grandchild num %d of even child no %d\n",j,i);
-                        exit(0); //
+                        exit(0); //7.3
                     }
                 }
-                while(wait(NULL) != -1); //
+                while(wait(NULL) != -1); //7.4
                 exit(0);
             }else{
                 printf("I am the child no %d\n",i);
-                int num_gc = 4; //
+                int num_gc = 4; //7.5
                 for(j = 0;j < num_gc;j++){
-                    pidsub = fork(); //
+                    pidsub = fork(); //7.6
                     if(pidsub == 0){
                         printf("I am grandchild num %d of odd child no %d\n",j,i);
-                        exit(0); //
+                        exit(0); //7.7
                     }
                 }
                 while(wait(NULL) != -1);
-                exit(0); //
+                exit(0); //7.8
             }
             // exit(0);
         }
