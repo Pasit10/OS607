@@ -5,7 +5,7 @@
 
 int main(void){
     pid_t pid;
-    int i = 0;
+    int i;
 
     pid = fork();
     if(pid > 0){
