@@ -8,6 +8,7 @@ int main(void){
     int i;
 
     pid = fork();
+    //if(pid < 0) exit(-1);
     if(pid > 0){
         int i = 1;
         printf("my copy of i is %d\n",i);

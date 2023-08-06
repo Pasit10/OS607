@@ -5,4 +5,4 @@ if [ -f $prog_name ]
 then
     ./$prog_name
 fi
-#rm -f $prog_name
+rm -f $prog_name
