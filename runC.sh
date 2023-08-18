@@ -3,6 +3,6 @@ prog_name=$(echo $1 | cut -d'.' -f1)
 gcc -o $prog_name $1
 if [ -f $prog_name ]
 then
-    ./$prog_name
+    ./$prog_name $2
 fi
 #rm -f $prog_name
