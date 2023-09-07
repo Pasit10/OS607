@@ -6,22 +6,14 @@
 
 int main(){
     pid_t pid;
-    pid = fork();
-
-    int data = 0;
-
-    if(pid == 0){
-        sleep(1);
-        data += 5;
-    }else{
-        data += 2;
-    }
-
-    data += 1;
-    printf("%d\n",data);
-    if(pid == 0){
-        exit(-1);
+    printf("parent %d\n",getpid());
+    for(int i = 0;i < 2;i++){
+        pid = fork();
+        if(pid == 0){
+            printf("%d am child loop parent %d %d\n",getpid(),getppid(),i);
+        }
     }
     while(wait(NULL) != -1);
+    printf("%d %d\n",getpid() ,getppid());
     printf("success fully \n");
 }
