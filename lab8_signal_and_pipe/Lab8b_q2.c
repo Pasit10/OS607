@@ -11,7 +11,8 @@ int main() {
     // after mapping to stdout, texts to be displayed
     // will be redirected to aaa.txt instead
     /* ans2.1 */
-
+    dup2(fd, STDOUT_FILENO) ;
+    
     /* to aaa.txt instead of screen */
     printf("please read this line in aaa.txt\n");
     close(fd);

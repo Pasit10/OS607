@@ -34,3 +34,10 @@ int main(void){
     printf("it take %d\n",cnt);
     return 0;
 }
+
+/*  
+    นายพสิษฐ์ มาลารัตน์ 65050607
+    output:
+        child created
+        it take 0
+*/

@@ -39,3 +39,9 @@ int main() {
     }
     return 0;
 }
+/*
+    write(pfd[1],inbuf,strlen(inbuf) + 1);
+    close(pfd[1]);
+    close(pfd[0]);
+    while(wait(NULL) != -1);
+*/

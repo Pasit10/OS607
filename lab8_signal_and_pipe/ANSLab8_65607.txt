@@ -1,0 +1,18 @@
+นายพสิษฐ์ มาลารัตน์ 65050607
+--------------- LAB A ---------------
+Q1 output:
+    2 power n:
+
+    Recerived a SIGUSR1. The max n is 20! = 2432902008176640000
+
+Q2 output:
+    child created
+    it take 0
+--------------- LAB B ---------------
+Q1  q1.3 : write(pfd[1],inbuf,strlen(inbuf) + 1);
+    q1.4 : close(pfd[1]);
+    q1.5 : close(pfd[0]);
+    q1.6 : while(wait(NULL) != -1);
+
+Q2 q2.1 : dup2(fd, STDOUT_FILENO) ;
+

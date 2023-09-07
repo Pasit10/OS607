@@ -26,3 +26,10 @@ int main(void){
     }
     return 0;
 }
+/*  
+    นายพสิษฐ์ มาลารัตน์ 65050607
+    output:
+        2 power n:
+
+        Recerived a SIGUSR1. The max n is 20! = 2432902008176640000
+*/
