@@ -5,7 +5,7 @@
 
 void INThandler(int);
 
-void main(){
+int main(){
     signal(SIGINT,INThandler);
 
     while(1)
@@ -16,7 +16,7 @@ void INThandler(int sig){
     signal(sig,SIG_IGN);
     printf("Did you hit Ctrl-C?\n want to quit? [y/n]: \n");
     char c;
-    scanf("%C",&c);
+    scanf("%c",&c);
     if(c == 'y' || c == 'Y'){
         exit(0);
     }else

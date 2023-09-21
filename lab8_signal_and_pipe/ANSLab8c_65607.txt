@@ -1,0 +1,18 @@
+นายพสิษฐ์ มาลารัตน์ 65050607
+--------------- LAB C ---------------
+Q2 output :
+    Data in memory:
+    from handler
+    Writing to memory: os kmitl
+Q4& AND q3 output :
+    successfully obtain ppid
+    ppid = 33520,Btw SIGUSR1 = 30
+    waiting for SIG before writing to server
+    Clnt write to mem & notify: os kmitl
+
+    from handler from handler From child: os kmitl
+Q5 :
+    Q5.1 : (a) shmid = shmget(IPC_PRIVATE,sizeof(int),0666|IPC_CREATE)
+    Q5.2 : (int*)
+    Q5.3 : count[0] = temp
+    Q5.4 : 4 5 6
