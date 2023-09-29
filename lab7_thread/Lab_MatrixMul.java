@@ -1,4 +1,4 @@
-package lab7_tread;
+package lab7_thread;
 
 import java.util.Arrays;
 
