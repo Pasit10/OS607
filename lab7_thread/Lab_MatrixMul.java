@@ -17,13 +17,11 @@ public class Lab_MatrixMul {
             for(int j = 0;j < matC_c;j++){
                 allthread[idx] = new Thread(new MatrixMulThread(i, j, matA, matB, matC));
                 allthread[idx].start();
-                System.out.println(allthread[idx].getId());
                 idx++;
             }
         }
         try{
             for(Thread t:allthread){
-                System.out.println(t.getId());
                 t.join();
             }
         }catch(Exception e){

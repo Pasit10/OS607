@@ -11,13 +11,13 @@ public class SharedNum5 {
 
     synchronized int getVal() {
         try {
-            this.wait();
+            wait();
         } catch (InterruptedException ie) {}
         return val;
     }
 
     synchronized void setVal(int x) {
         val = x;
-        this.notifyAll();
+        notifyAll();
     }
 }

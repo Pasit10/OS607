@@ -1,4 +1,4 @@
-package lab7_tread;
+package lab7_thread;
 
 public class L7_Thread_demo{
     public static void main(String[] args){
@@ -25,7 +25,7 @@ class WorkerDemo1 implements Runnable{
             Thread.sleep(1);
         }catch(Exception e){e.printStackTrace();}
         o.inc(3);
-        System.out.println("From worker1 thread " +  Thread.currentThread().getId() + " x value is " + o.getValue());
+        System.out.println("From worker1 thread " +  Thread.currentThread().threadId() + " x value is " + o.getValue());
     }
 }
 
@@ -47,6 +47,6 @@ class WorkerDemo2 implements Runnable{
             Thread.sleep(10);
         }catch(Exception e){e.printStackTrace();}
         o.inc(4);
-        System.out.println("From worker2 thread " + Thread.currentThread().getId() + " x value is " + o.getValue());
+        System.out.println("From worker2 thread " + Thread.currentThread().threadId() + " x value is " + o.getValue());
     }
 }
