@@ -12,9 +12,9 @@ public class Q3WaitNotifyDriver {
             Thread.sleep(2); // main
         }catch(InterruptedException ie){}
         (new Thread(new Runnable() {
-                @Override public void run(){
-                    sn.setVal(2021);
-                }
+            @Override public void run(){
+                sn.setVal(2021);
+            }
         })).start();
         System.out.println("from main");
     }

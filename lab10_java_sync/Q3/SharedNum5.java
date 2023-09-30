@@ -10,9 +10,11 @@ public class SharedNum5 {
     }
 
     synchronized int getVal() {
-        try {
-            wait();
-        } catch (InterruptedException ie) {}
+        synchronized(lock){
+            try{
+                wait();
+            }catch(InterruptedException ie){}
+        }
         return val;
     }
 
