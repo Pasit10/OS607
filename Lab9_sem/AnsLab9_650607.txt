@@ -1,0 +1,4 @@
+---- นาย พสิษฐ์ มาลารัตน์ 65050607 ----
+q1 :
+    A : enterCriticalSection(0);
+    B : ßenterCriticalSection(0);
