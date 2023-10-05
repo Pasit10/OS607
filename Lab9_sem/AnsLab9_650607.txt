@@ -1,4 +1,11 @@
 ---- นาย พสิษฐ์ มาลารัตน์ 65050607 ----
 q1 :
     A : enterCriticalSection(0);
-    B : ßenterCriticalSection(0);
+    B : eenterCriticalSection(0);
+
+q2 :
+    C : sem_wait(&mySemaphore);
+    D : sem_init(&mySemaphore,0,1);
+    Output : thr 6095056896 exits. lastSeen = 199803
+             Last cnt from tid[0] is 199803
+             final cnt = 199999
