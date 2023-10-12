@@ -1,0 +1,6 @@
+---- นายพสิษฐ์ มาลารัตน์ 65050607 ----
+Q1 : notifyAll();
+Q2 : synchronized
+Q3 : wait();
+Q4 : 4.2
+Q5 : public
